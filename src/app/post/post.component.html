@@ -1,0 +1,5 @@
+<!--component html goes here -->
+<div *ngFor="let data of posts">
+  <div class="title">{{data.title[0].value}}</div>
+  <div class="body" [innerHTML]="data.body[0].value"></div>
+</div>
