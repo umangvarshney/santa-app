@@ -7,6 +7,6 @@ import {AppService} from '../app.service';
 export class PostService {
   constructor(private appService:AppService){}
   getPosts():Observable<any>{
-    return this.appService.get('/post').map(res=>res.json()).catch(error=>Observable.throw(error));
+    return this.appService.get('/api/v1/post').map(res=>res.json()).catch(error=>Observable.throw(error));
   }
 }

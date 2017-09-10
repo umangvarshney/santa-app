@@ -5,7 +5,7 @@ import {Observable} from 'rxjs';
 @Injectable()
 export class AppService {
 
-  apiUrl = 'http://santa.dev/api/v1';
+  apiUrl = 'http://santa.dev';
   headers = new Headers({
     'Accept':'application/json',
     'content-type':'application/hal+json',
